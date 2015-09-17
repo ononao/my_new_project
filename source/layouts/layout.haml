@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title
+      = current_page.data.title || "ONONAO"
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag "all"
+  %body
+    = yield
+    = partial 'layouts/header'
+    = partial 'layouts/footer'
